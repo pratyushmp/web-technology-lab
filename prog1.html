@@ -22,18 +22,18 @@
         </style>
 
         <script type='text/javascript'>
-            function calc(clicked_id) {
+            function calc(id) {
                 var val1 = parseFloat(document.getElementById("value1").value);
                 var val2 = parseFloat(document.getElementById("value2").value);
                 if (isNaN(val1) || isNaN(val2))
                     alert("ENTER VALID NUMBER");
-                else if (clicked_id == 'add')
+                else if (id == 'add')
                     document.getElementById("answer").value = val1 + val2;
-                else if (clicked_id == 'sub')
+                else if (id == 'sub')
                     document.getElementById("answer").value = val1 - val2;
-                else if (clicked_id == 'mul')
+                else if (id == 'mul')
                     document.getElementById('answer').value = val1 * val2;
-                else if (clicked_id == 'div')
+                else if (id == 'div')
                     document.getElementById("answer").value = val1 / val2;
             }
 
@@ -53,14 +53,12 @@
             </tr>
             <tr>
                 <td>value1</td>
-                <td><input type="text" id="value1" value="0" />
-                <td>
+                <td><input type="text" id="value1" value="0" /></td>
                 <td>value2</td>
                 <td><input type="text" id="value2" value="0" /></td>
             </tr>
             <tr>
-                <td><input type="button" value="Addition" id="add" onclick="calc(this.id)" />
-                <td>
+                <td><input type="button" value="Addition" id="add" onclick="calc(this.id)" /></td>
                 <td><input type="button" value="Substraction" id="sub" onclick="calc(this.id)" /></td>
                 <td><input type="button" value="Multiplication" id="mul" onclick="calc(this.id)" /></td>
                 <td><input type="button" value="Division" id="div" onclick="calc(this.id)" /></td>
