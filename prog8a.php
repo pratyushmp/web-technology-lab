@@ -3,9 +3,10 @@
         <style>
             table, td, th
             {
-                border: 1 px solid black;
+                border: 1px solid black;
                 width: 35%;
                 background-color: DarkGray;
+                border-collapse: collapse;
             }
             table { margin: auto;}
 
@@ -31,7 +32,7 @@
         {
             $num1 = $_POST['num1'];
             $num2 = $_POST['num2'];
-            if(is_numeric($num1) andis_numeric($num1))
+            if(is_numeric($num1) and is_numeric($num2))
             {
                 echo"<tr><td>Addition: </td><td><p>".($num1+$num2)."</p></td>";
                 echo"<tr><td>Subtraction: </td><td><p>".($num1-$num2)."</p></td>";
@@ -41,7 +42,7 @@
             }
             else
             {
-                echo"<script type = 'text/javascript>alert('ENTER VALID NUMBER');</script>";
+                echo"<script type = 'text/javascript'> alert('ENTER VALID NUMBER'); </script>";
             } 
         }
         ?>

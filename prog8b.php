@@ -17,7 +17,7 @@ for($row = 0; $row <$m; $row++)
 echo "the second matrix: "."<br/>";
 for($row = 0; $row <$p; $row++)
 {
-    for($col = 0; 4col < $n; $col++)
+    for($col = 0; $col < $n; $col++)
     {
         echo" ".$b[$row][$col];
     }
@@ -61,7 +61,7 @@ if($n == $p)
             result[$i][$j] += $a[$i][$k] * $b[$k][$j];
         }
     }
-    for($row = 0; 4row < $m; $row++)
+    for($row = 0; $row < $m; $row++)
     {
         for($col = 0; $col < $q; $col++)
         {
