@@ -55,10 +55,10 @@ if($n == $p)
         for($j = 0; $j < $q; $j++)
         {
             $result[$i][$j] = 0;
-        }
-        for($k = 0; $k < $n; $k++)
-        {
-            $result[$i][$j] += $a[$i][$k] * $b[$k][$j];
+            for($k = 0; $k < $n; $k++)
+            {
+                $result[$i][$j] += $a[$i][$k] * $b[$k][$j];
+            }
         }
     }
     for($row = 0; $row < $m; $row++)
