@@ -58,7 +58,7 @@ if($n == $p)
         }
         for($k = 0; $k < $n; $k++)
         {
-            result[$i][$j] += $a[$i][$k] * $b[$k][$j];
+            $result[$i][$j] += $a[$i][$k] * $b[$k][$j];
         }
     }
     for($row = 0; $row < $m; $row++)
